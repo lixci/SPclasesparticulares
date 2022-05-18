@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Homemade+Apple&family=Nanum+Pen+Script&family=Permanent+Marker&family=Rock+Salt&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-rows: 80px calc(100vh - 160px) 80px;
+    grid-template-columns: 100%;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    background-color: rgb(214, 214, 214);
+}
+/* HEADER GENERAL */
+header{
+    background-color: rgb(50, 102, 50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: whitesmoke;
+    font-size: 55px;
+    padding-left: 15px;
+    padding-bottom: 7px;
+}
+.nav1 ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav1 ul li{
+    font-size: 20px;
+    padding-right: 15px;
+}
+.nav1 a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav1 a:hover{
+    color: black;
+}
+/* FOOTER GENERAL */
+footer{
+    background-color: rgb(50, 102, 50);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    padding-left: 15px;
+    color: whitesmoke;
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+}
+.redes p{
+    padding-right: 15px;
+}
+.redes a{
+    color: whitesmoke;
+    padding-right: 15px;
+}
+.redes a:hover{
+    color: black;
+}
+/* PAGINA INDEX */
+.principal{
+    background-image: url(img/clase1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boton a{
+    background-color: rgba(245, 245, 245, 0.425);
+    height: 60px;
+    width: 120px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: solid;
+    border-radius: 50px;
+    text-align: center;
+}
+.boton a:hover{
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+.wapp{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 50px;
+    color: whitesmoke;
+}
+.wapp:hover{
+    color: rgb(0, 0, 0);
+}
+/* PAGINA INFORMACION */
+.principali{
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(2, 350px);
+    grid-template-areas: "caja1 caja2"
+                        " caja3 caja4"
+    ;
+    align-content: center;
+    justify-content: center;
+}
+.caja{
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(50, 102, 50);
+    border: 1px solid black;
+}
+.caja1{
+    grid-area: caja1;
+    background-image: url(/img/clase5.jpg);
+    background-size: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.caja2 h3{
+    padding-top: 65px;
+}
+.caja3 h3{
+    padding-top: 65px;
+}
+.caja4 h3{
+    padding-top: 65px;
+}
+.caja2 p{
+    align-self: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.caja3 p{
+    align-self: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.caja4 p{
+    align-self: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.wappi{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 50px;
+    color: rgb(50, 102, 50);
+}
+.wappi:hover{
+    color: rgb(0, 0, 0);
+}
+/* PAGINA CONTACTO */
+.pizzarron{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(50, 102, 50);
+    color: whitesmoke;
+    margin: 100px;
+    margin-top: 90px;
+    height: 600px;
+}
+.principalc form{
+    display: flex;
+    flex-direction: column;
+}
+legend{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pizzarron form{
+    font-size: 20px;
+    text-align: center;
+}
+.pizzarron input{
+    border: none;
+    height: 25px;
+}
+.pizzarron .comentario1{
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+}
+.checkmañana1{
+    position: absolute;
+    right: 850px;
+    top: 535px;
+}
+.checktarde1{
+    position: absolute;
+    right: 850px;
+    top: 565px;
+}
+.enviar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.wappc{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 50px;
+    color: rgb(50, 102, 50);
+}
+.wappc:hover{
+    color: rgb(0, 0, 0);
+}
+/* PAGINA UBICACION */
+.principalu .pizzarron{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.pizzarron iframe{
+    height: 80%;
+    width: 50%;
+}
+.pizzarron h3{
+    padding-bottom: 20px;
+    font-weight: lighter;
+}
+.direccion{
+    padding-right: 100px;
+    font-size: 35px;
+    text-align: center;
+}
+.wappu{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 50px;
+    color: rgb(50, 102, 50);
+}
+.wappu:hover{
+    color: rgb(0, 0, 0);
+}
+/* PAGINA GALERIA */
+.principalg{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: "img1 img2 img2"
+                        " img1 img3 img4"
+                        " img5 img5 img4";
+    grid-gap: 20px;
+    padding-top: 65px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.principalg div{
+    border-radius: 10px;
+}
+.img1{
+    grid-area: img1;
+    background-image: url(/img/clase5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img2{
+    grid-area: img2;
+    background-image: url(/img/clase2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img3{
+    grid-area: img3;
+    background-image: url(/img/clase1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img4{
+    grid-area: img4;
+    background-image: url(/img/clase3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img5{
+    grid-area: img5;
+    background-image: url(/img/clase4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.wappg{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 50px;
+    color: rgb(50, 102, 50);
+}
+.wappg:hover{
+    color: rgb(0, 0, 0);
+}
+@media only screen and (max-width: 480px){
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .logo{
+        font-size: 35px;
+    }
+    .nav1 ul li{
+        font-size: 12px;
+        padding: 5px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        font-size: 15px;
+    }
+    .principal{
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 150px;
+    }
+    .boton a{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 7px;
+        padding-bottom: 9px;
+    }
+    .wapp{
+        color: whitesmoke;
+        font-size: 20px;
+        bottom: 5px;
+    }
+    .principali{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 150px);
+        grid-template-areas: "caja1"
+                            " caja2"
+                            " caja3"
+                            " caja4"
+    ;
+    align-self: center;
+    font-size: 18px;
+    }
+    .caja h3{
+        padding-top: 10px;
+    }
+    .caja p{
+        padding-top: 5px;
+    }
+    .wappi{
+        color: whitesmoke;
+        font-size: 20px;
+        bottom: 5px;
+    }
+    .wappg{
+        color: whitesmoke;
+        font-size: 20px;
+        bottom: 5px;
+    }
+    .principalg{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "img1"
+                            " img2"
+                            " img3"
+                            " img4"
+                            " img5";
+        grid-gap: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
