@@ -71,17 +71,29 @@ body{
 }
 .principali{
     height: calc(100vh - 160px);
-    padding-top: 60px;
+    padding-top: 45px;
     text-align: center;
 }
+.principali h3{
+    font-size: 25px;
+    padding-top: 5px;
+}
+.principali p{
+    font-size: 18px;
+}
 .caja1{
-    height: 300px;
+    height: 330px;
     background-image: url(/img/clase5.jpg);
     background-size: cover;
     background-position: center;
 }
-.carousel-inner img{
+.caja2{
+    color: black;
+}
+.carousel-item img{
     width: 100%;
+    height: calc(100vh - 160px);
+    object-fit: cover;
 }
 footer{
     height: 80px;
@@ -109,5 +121,27 @@ footer p{
     }
     .btn{
         margin-top: 100px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .principali{
+        height: auto;
+        padding-top: 20px;
+    }
+    .caja2{
+        padding-top: 10px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .principali{
+        height: auto;
+        padding-top: 30px;
+    }
+    .principali h3{
+        font-size: 20px;
+        padding-top: 0px;
+    }
+    .principali p{
+        font-size: 15px;
     }
 }
