@@ -43,6 +43,7 @@ body{
     animation-duration: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    padding-top: 30px;
 }
 @keyframes intermitente{
     0%{
@@ -53,6 +54,7 @@ body{
     }
 }
 .btn{
+    margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     height: 40px;
     width: 130px;
@@ -66,6 +68,20 @@ body{
 }
 .btn a:hover{
     color: black;
+}
+.principali{
+    height: calc(100vh - 160px);
+    padding-top: 60px;
+    text-align: center;
+}
+.caja1{
+    height: 300px;
+    background-image: url(/img/clase5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.carousel-inner img{
+    width: 100%;
 }
 footer{
     height: 80px;
