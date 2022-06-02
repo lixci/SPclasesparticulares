@@ -43,36 +43,47 @@
         </nav>
     </header>
     <!-- finaliza header y navbar -->
+    <!-- inicia main -->
     <main class="principalc">
-        <div class="pizzarron">
+        <div class="pizzarronc">
+            <!-- inicia formulario -->
             <legend>FORMULARIO DE CONTACTO</legend>
-            <form action="enviar.php" method="post" enctype="text/plain">
-                <label class="nombre" for="nombre">Nombre:</label>
-                <input class="nombre1" type="text" name="nombre" placeholder="NOMBRE" required>
-                <label class="apellido" for="apellido">Apellido:</label>
-                <input class="apellido1" type="text" name="apellido" placeholder="APELLIDO" required>
-                <label class="telefono" for="telefono">Telefono:</label>
-                <input class="telefono1" type="number" name="telefono" placeholder="NUMERO" required>
-                <label class="correo" for="correo">Correo:</label>
-                <input class="correo1" type="email" name="correo" placeholder="CORREO" required>
-                <label class="nivel" for="nivel">Elegi tu nivel</label>
-                <select class="nivel1" name="nivel" id="">
-                    <option>Primario</option>
-                    <option>Secundario</option>
-                    <option>Terciario</option>
-                    <option>Universitario</option>
-                </select>
-                <label class="checkmañana" for="checkbox">Por la mañana</label>
-                <input class="checkmañana1" type="checkbox">
-                <label class="checktarde" for="checkbox">Por la tarde</label>
-                <input class="checktarde1" type="checkbox">
-                <label class="comentario" for="comentarios">Comentarios</label>
-                <textarea class="comentario1" name="" cols="37" rows="3" placeholder="COMENTARIOS" required></textarea>
-                <input class="enviar" type="submit" value="Enviar formulario">
-                <input class="limpiar" type="reset" value="Limpiar formulario">
-            </form>
+            <div class="formulario">
+                <form action="enviar.php" method="post" enctype="text/plain">
+                    <p>
+                        <label>nombre</label>
+                        <input type="text" name="nombre" placeholder="nombre completo" required>
+                    </p>
+                    <p>
+                        <label>correo</label>
+                        <input type="email" name="correo" placeholder="tucorreo@mail.com" required>
+                    </p>
+                    <p>
+                        <label>telefono</label>
+                        <input type="number" name="telefono" placeholder="3411234567" required>
+                    </p>
+                    <p>
+                        <label>direccion</label>
+                        <input type="text" name="direccion" placeholder="donde vives" required>
+                    </p>
+                    <p class="bloque">
+                        <label>comentarios</label> 
+                        <textarea name="comentarios" rows="3" placeholder="Comentame por ej: Nivel de estudio, horarios disponibles, etc." required></textarea>
+                    </p>
+                    <p class="bloque">
+                        <p>
+                            <input class="boton enviar" type="submit" value="ENVIAR FORMULARIO">
+                        </p>
+                        <p>
+                            <input class="boton limpiar" type="reset" value="LIMPIAR FORMULARIO">
+                        </p>
+                    </p>
+                </form>
+            </div>
+            <!-- finaliza formulario -->
         </div>
     </main>
+    <!-- finaliza main -->
     <!-- inicia footer -->
     <footer>
         <p>copyright - todos los derechos reservados</p>
@@ -80,7 +91,7 @@
             <p>seguime en redes sociales
             <a href="https://facebook.com/spclasesparticulares/"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://instagram.com/spclasesparticulares/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://chat.whatsapp.com/Gw7FDEsUl6k8AsyFTStyPm" class="wapp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://chat.whatsapp.com/Gw7FDEsUl6k8AsyFTStyPm" class="wappc"><i class="fa-brands fa-whatsapp"></i></a>
             </p>
         </div>
     </footer>
