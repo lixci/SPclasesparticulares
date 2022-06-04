@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Homemade+Apple&family=Nanum+Pen+Script&family=Permanent+Marker&family=Rock+Salt&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Permanent Marker", cursive;
   font-weight: lighter;
@@ -23,7 +17,6 @@ body .wapp:hover {
   transition: 1s;
 }
 
-/* HEADER GENERAL */
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
@@ -42,7 +35,6 @@ body .wapp:hover {
   color: whitesmoke;
 }
 
-/* FOOTER GENERAL */
 footer {
   height: 80px;
   width: 100%;
@@ -60,6 +52,12 @@ footer .redes a {
 footer .redes a:hover {
   color: black;
   transition: 1s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGINA INDEX */

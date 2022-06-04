@@ -1,0 +1,17 @@
+body{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    .wapp{
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        font-size: 50px;
+        color: whitesmoke;
+        transition: all 1s;
+        &:hover{
+            color: rgb(0, 0, 0);
+            transform: rotateY(360deg);
+            transition: 1s;
+        }
+    }
+}

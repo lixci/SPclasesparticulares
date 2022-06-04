@@ -1,0 +1,20 @@
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(50, 107, 50);
+    color: whitesmoke;
+    text-align: center;
+    p{
+        margin-bottom: 0;
+        padding-top: 10px;
+    }
+    .redes{
+        a{
+            color: whitesmoke;
+            &:hover{
+                color: black;
+                transition: 1s;
+            }
+        }
+    }
+}

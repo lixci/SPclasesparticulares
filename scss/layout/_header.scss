@@ -1,0 +1,21 @@
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+    .navbar{
+        background-color: rgb(50, 107, 50);
+        .navbar-brand{
+            font-size: 40px;
+            color: whitesmoke;
+        }
+        .navbar-toggler{
+            font-size: 1rem;
+        }
+        .collapse{
+            .navbar-nav{
+                .nav-link{
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+}
