@@ -86,7 +86,7 @@ footer .redes a:hover {
   padding-top: 30px;
 }
 .jumbotron .botonp a {
-  background-color: rgba(245, 245, 245, 0.425);
+  background-color: rgba(245, 245, 245, 0.45);
   height: 45px;
   width: 130px;
   padding-top: 6px;
@@ -99,7 +99,7 @@ footer .redes a:hover {
 }
 .jumbotron .botonp a:hover {
   color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.425);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 @-webkit-keyframes intermitente {
@@ -192,7 +192,7 @@ footer .redes a:hover {
   border: none;
   background: none;
   outline: 0;
-  color: #fff;
+  color: whitesmoke;
   border-bottom: 1px solid whitesmoke;
 }
 .principalc .pizzarronc .formulario form input {
@@ -201,7 +201,7 @@ footer .redes a:hover {
   border: none;
   background: none;
   outline: 0;
-  color: #fff;
+  color: whitesmoke;
   border-bottom: 1px solid whitesmoke;
 }
 .principalc .pizzarronc .formulario form .boton {
@@ -215,7 +215,7 @@ footer .redes a:hover {
   justify-content: center;
   align-items: center;
   background-color: rgb(50, 107, 50);
-  color: rgb(245, 245, 245);
+  color: whitesmoke;
   height: calc(100vh - 206px);
   margin: 20px 50px;
 }

@@ -2,6 +2,7 @@
 @import "./scss/layout/body";
 @import "./scss/layout/header";
 @import "./scss/layout/footer";
+@import "./scss/utilities/variables";
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@
 }
 /* PAGINA INDEX */
 .jumbotron{
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/clase1.jpg);
+    background: linear-gradient(to right, $backgroud-principal, $backgroud-principal), url(img/clase1.jpg);
     background-size: cover;
     background-position: center;
     height: calc(100vh - 166px);
@@ -20,7 +21,7 @@
     justify-content: center;
     h1{
         text-align: center;
-        color: whitesmoke;
+        color: $escritura;
         animation-name: intermitente;
         animation-duration: 2s;
         animation-direction: alternate;
@@ -29,7 +30,7 @@
     }
     .botonp{
         a{
-            background-color: rgba(245, 245, 245, 0.425);
+            background-color: rgba(245, 245, 245, 0.45);
             height: 45px;
             width: 130px;
             padding-top: 6px;
@@ -40,8 +41,8 @@
             text-align: center;
             transition: all 1s;
             &:hover{
-                color: whitesmoke;
-                background-color: rgba(0, 0, 0, 0.425);
+                color: $escritura;
+                background-color: rgba(0, 0, 0, 0.45);
             }
         }
     }
@@ -89,7 +90,7 @@
     height: calc(100vh - 166px);
     background-color: rgb(50, 107, 50);
     padding: 0px 30px;
-    color: whitesmoke;
+    color: $escritura;
     .pizzarronc{
         max-width: 1170px;
         margin-left: auto;
@@ -122,8 +123,8 @@
                     border: none;
                     background: none;
                     outline: 0;
-                    color: #fff;
-                    border-bottom: 1px solid whitesmoke;
+                    color: $escritura;
+                    border-bottom: 1px solid $escritura;
                 }
                 input{
                     width: 100%;
@@ -131,11 +132,11 @@
                     border: none;
                     background: none;
                     outline: 0;
-                    color: #fff;
-                    border-bottom: 1px solid whitesmoke;
+                    color: $escritura;
+                    border-bottom: 1px solid $escritura;
                 }
                 .boton{
-                    border: 1px solid whitesmoke;
+                    border: 1px solid $escritura;
                 }
             }
         }
@@ -148,7 +149,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(50, 107, 50);
-    color: rgb(245, 245, 245);
+    color: $escritura;
     height: calc(100vh - 206px);
     margin: 20px 50px;
     iframe{
