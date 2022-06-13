@@ -93,11 +93,15 @@ footer .redes a:hover {
     opacity: 1;
   }
 }
+/* EXTEND */
+.altura, .principalc, .carousel-item img, .principali {
+  height: calc(100vh - 166px);
+}
+
 .jumbotron {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/clase1.jpg);
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 166px);
   border-radius: 0;
   margin: 0;
   display: grid;
@@ -122,16 +126,8 @@ footer .redes a:hover {
 
 /* PAGINA INFORMACION */
 .principali {
-  height: calc(100vh - 166px);
   padding-top: 45px;
   text-align: center;
-}
-.principali .caja2 h3 {
-  font-size: 25px;
-  padding-top: 5px;
-}
-.principali .caja2 p {
-  font-size: 18px;
 }
 .principali .caja1 {
   height: 330px;
@@ -139,14 +135,52 @@ footer .redes a:hover {
   background-size: cover;
   background-position: center;
 }
-.principali .caja2 {
+.principali .caja-2 h3 {
+  font-size: 25px;
+  padding-top: 5px;
+}
+.principali .caja-2 p {
+  font-size: 18px;
+}
+
+/* MAPA */
+.caja-black {
+  font-family: arial;
   color: black;
+}
+
+.caja-white {
+  font-family: monospace;
+  color: white;
+}
+
+.caja-blue {
+  font-family: serif;
+  color: blue;
+}
+
+/* MIXIN */
+.caja-black {
+  height: 150px;
+  width: 15%;
+  background-color: green;
+}
+
+.caja-white {
+  height: 150px;
+  width: 15%;
+  background-color: darkgreen;
+}
+
+.caja-blue {
+  height: 150px;
+  width: 15%;
+  background-color: rgb(0, 31, 0);
 }
 
 /* PAGINA GALERIA */
 .carousel-item img {
   width: 100%;
-  height: calc(100vh - 166px);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -159,7 +193,6 @@ footer .redes a:hover {
 }
 
 .principalc {
-  height: calc(100vh - 166px);
   padding: 0px 30px;
   color: whitesmoke;
 }

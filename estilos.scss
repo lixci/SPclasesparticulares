@@ -30,11 +30,14 @@
         opacity: 1;
     }
 }
+/* EXTEND */
+.altura{
+    height: calc(100vh - 166px);
+}
 .jumbotron{
     background: linear-gradient(to right, $backgroud-principal, $backgroud-principal), url(img/clase1.jpg);
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 166px);
     border-radius: 0;
     margin: 0;
     display: grid;
@@ -60,10 +63,16 @@
 }
 /* PAGINA INFORMACION */
 .principali{
-    height: calc(100vh - 166px);
+    @extend .altura;
     padding-top: 45px;
     text-align: center;
-    .caja2{
+    .caja1{
+        height: 330px;
+        background-image: url(/img/clase5.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .caja-2{
         h3{
             font-size: 25px;
             padding-top: 5px;
@@ -72,20 +81,38 @@
             font-size: 18px;
         }
     }
-    .caja1{
-        height: 330px;
-        background-image: url(/img/clase5.jpg);
-        background-size: cover;
-        background-position: center;
+}
+/* MAPA */
+$map: (
+    arial: black,
+    monospace: white,
+    serif: blue
+    );
+@each $tipos, $colores in $map {
+    .caja-#{$colores} {
+        font-family: $tipos;
+        color: $colores;
     }
-    .caja2{
-        color: black;
-    }
+}
+/* MIXIN */
+@mixin dimension ($height, $width, $backcolor) {
+    height: $height;
+    width: $width;
+    background-color: $backcolor;
+}
+.caja-black{
+    @include dimension (150px, 15%, green)
+}
+.caja-white{
+    @include dimension (150px, 15%, darkgreen)
+}
+.caja-blue{
+    @include dimension (150px, 15%, rgb(0, 31, 0))
 }
 /* PAGINA GALERIA */
 .carousel-item img{
+    @extend .altura;
     width: 100%;
-    height: calc(100vh - 166px);
     object-fit: cover;
 }
 /* PAGINA CONTACTO */
@@ -95,7 +122,7 @@
         color: whitesmoke;
 }
 .principalc{
-    height: calc(100vh - 166px);
+    @extend .altura;
     padding: 0px 30px;
     color: $escritura;
     .pizzarronc{
