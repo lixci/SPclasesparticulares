@@ -182,7 +182,7 @@ footer .redes a:hover {
 .carousel-item img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+    object-fit: cover;
 }
 
 /* PAGINA CONTACTO */
