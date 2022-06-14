@@ -185,13 +185,14 @@ footer .redes a:hover {
      object-fit: cover;
 }
 
-/* PAGINA CONTACTO */
-.subtituloc {
+/* SUBTITULOS GENERALES */
+.subtitulo {
   text-align: center;
   font-size: 2em;
   color: whitesmoke;
 }
 
+/* PAGINA CONTACTO */
 .principalc {
   padding: 0px 30px;
   color: whitesmoke;
@@ -263,6 +264,19 @@ footer .redes a:hover {
   width: 100%;
 }
 
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .subtitulo {
+    font-size: 20px;
+  }
+
+  .subtituloc {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 500px) {
   footer {
     font-size: 15px;
@@ -270,10 +284,6 @@ footer .redes a:hover {
 
   .wapp {
     font-size: 40px;
-  }
-
-  h1 {
-    font-size: 15px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -309,8 +319,10 @@ footer .redes a:hover {
     padding: 2em;
   }
 
-  .contacto-info h3,
-.contacto-info ul {
+  .contacto-info ul {
+    text-align: left;
+  }
+  .contacto-info h3 {
     text-align: left;
   }
 }

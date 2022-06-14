@@ -115,12 +115,13 @@ $map: (
     width: 100%;
     object-fit: cover;
 }
-/* PAGINA CONTACTO */
-.subtituloc{
-        text-align: center;
-        font-size: 2em;
-        color: whitesmoke;
+/* SUBTITULOS GENERALES */
+.subtitulo{
+    text-align: center;
+    font-size: 2em;
+    color: whitesmoke;
 }
+/* PAGINA CONTACTO */
 .principalc{
     @extend .altura;
     padding: 0px 30px;
@@ -194,15 +195,23 @@ $map: (
         }
     }
 }
+@media only screen and (max-width: 400px){
+    h1{
+        font-size: 20px;
+    }
+    .subtitulo{
+        font-size: 20px;
+    }
+    .subtituloc{
+        font-size: 18px;
+    }
+}
 @media only screen and (max-width: 500px){
     footer{
         font-size: 15px;
     }
     .wapp{
         font-size: 40px;
-    }
-    h1{
-        font-size: 15px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -213,12 +222,16 @@ $map: (
     .caja2{
         padding-top: 10px;
     }
-    .pizzarronc legend{
-        font-size: 25px;
-        padding-bottom: 15px;
+    .pizzarronc{
+        legend{
+            font-size: 25px;
+            padding-bottom: 15px;
+        }
     }
-    .formulario form{
-        display: block;
+    .formulario{
+        form{
+            display: block;
+        }
     }
     .principalc{
         height: auto;
@@ -232,9 +245,13 @@ $map: (
     .contact-wrapper > * {
         padding: 2em;
     }
-    .contacto-info h3,
-    .contacto-info ul {
-        text-align: left;
+    .contacto-info{
+        ul{
+            text-align: left;
+        }
+        h3{
+            text-align: left;
+        }
     }
 }
 @media only screen and (max-width: 991px){
@@ -242,11 +259,15 @@ $map: (
         height: auto;
         padding-top: 30px;
     }
-    .principali h3{
-        font-size: 20px;
-        padding-top: 0px;
+    .principali{
+        h3{
+            font-size: 20px;
+            padding-top: 0px;
+        }
     }
-    .principali p{
-        font-size: 15px;
+    .principali{
+        p{
+            font-size: 15px;
+        }
     }
 }
