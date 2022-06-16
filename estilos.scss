@@ -8,6 +8,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* EXTEND */
+.altura{
+    height: calc(100vh - 166px);
+}
 /* PAGINA INDEX */
 .header{
     .navbar{
@@ -29,10 +33,6 @@
     100%{
         opacity: 1;
     }
-}
-/* EXTEND */
-.altura{
-    height: calc(100vh - 166px);
 }
 .jumbotron{
     background: linear-gradient(to right, $backgroud-principal, $backgroud-principal), url(img/clase1.jpg);
@@ -64,50 +64,7 @@
 /* PAGINA INFORMACION */
 .principali{
     @extend .altura;
-    padding-top: 45px;
     text-align: center;
-    .caja1{
-        height: 330px;
-        background-image: url(img/clase5.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    .caja-2{
-        h3{
-            font-size: 25px;
-            padding-top: 5px;
-        }
-        p{
-            font-size: 18px;
-        }
-    }
-}
-/* MAPA */
-$map: (
-    arial: black,
-    monospace: white,
-    serif: blue
-    );
-@each $tipos, $colores in $map {
-    .caja-#{$colores} {
-        font-family: $tipos;
-        color: $colores;
-    }
-}
-/* MIXIN */
-@mixin dimension ($height, $width, $backcolor) {
-    height: $height;
-    width: $width;
-    background-color: $backcolor;
-}
-.caja-black{
-    @include dimension (150px, 15%, green)
-}
-.caja-white{
-    @include dimension (150px, 15%, darkgreen)
-}
-.caja-blue{
-    @include dimension (150px, 15%, rgb(0, 31, 0))
 }
 /* PAGINA GALERIA */
 .carousel-item img{
@@ -214,16 +171,14 @@ $map: (
         font-size: 40px;
     }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 575px){
     .principali{
         height: auto;
-        padding-top: 20px;
     }
-    .caja2{
-        padding-top: 10px;
-    }
+}
+@media only screen and (max-width: 768px){
     .pizzarronc{
-        legend{
+        h1{
             font-size: 25px;
             padding-bottom: 15px;
         }
@@ -238,7 +193,7 @@ $map: (
     }
 }
 @media only screen and (min-width: 768px){
-    .contact-wrapper {
+    .contact-wrapper{
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
@@ -255,10 +210,6 @@ $map: (
     }
 }
 @media only screen and (max-width: 991px){
-    .principali{
-        height: auto;
-        padding-top: 30px;
-    }
     .principali{
         h3{
             font-size: 20px;

@@ -61,6 +61,11 @@ footer .redes a:hover {
   box-sizing: border-box;
 }
 
+/* EXTEND */
+.altura, .principalc, .carousel-item img, .principali {
+  height: calc(100vh - 166px);
+}
+
 /* PAGINA INDEX */
 .header .navbar h1 {
   text-align: center;
@@ -93,11 +98,6 @@ footer .redes a:hover {
     opacity: 1;
   }
 }
-/* EXTEND */
-.altura, .principalc, .carousel-item img, .principali {
-  height: calc(100vh - 166px);
-}
-
 .jumbotron {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/clase1.jpg);
   background-size: cover;
@@ -126,56 +126,7 @@ footer .redes a:hover {
 
 /* PAGINA INFORMACION */
 .principali {
-  padding-top: 45px;
   text-align: center;
-}
-.principali .caja1 {
-  height: 330px;
-  background-image: url(img/clase5.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.principali .caja-2 h3 {
-  font-size: 25px;
-  padding-top: 5px;
-}
-.principali .caja-2 p {
-  font-size: 18px;
-}
-
-/* MAPA */
-.caja-black {
-  font-family: arial;
-  color: black;
-}
-
-.caja-white {
-  font-family: monospace;
-  color: white;
-}
-
-.caja-blue {
-  font-family: serif;
-  color: blue;
-}
-
-/* MIXIN */
-.caja-black {
-  height: 150px;
-  width: 15%;
-  background-color: green;
-}
-
-.caja-white {
-  height: 150px;
-  width: 15%;
-  background-color: darkgreen;
-}
-
-.caja-blue {
-  height: 150px;
-  width: 15%;
-  background-color: rgb(0, 31, 0);
 }
 
 /* PAGINA GALERIA */
@@ -286,17 +237,13 @@ footer .redes a:hover {
     font-size: 40px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 575px) {
   .principali {
     height: auto;
-    padding-top: 20px;
   }
-
-  .caja2 {
-    padding-top: 10px;
-  }
-
-  .pizzarronc legend {
+}
+@media only screen and (max-width: 768px) {
+  .pizzarronc h1 {
     font-size: 25px;
     padding-bottom: 15px;
   }
@@ -327,11 +274,6 @@ footer .redes a:hover {
   }
 }
 @media only screen and (max-width: 991px) {
-  .principali {
-    height: auto;
-    padding-top: 30px;
-  }
-
   .principali h3 {
     font-size: 20px;
     padding-top: 0px;
